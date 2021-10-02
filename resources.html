@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video Resources for Meeting Minutes</title>
+    <meta name="author" content="Grant Duntugan" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Back to Meeting Minutes</a>
+    </nav>
+
+    <main>
+      <h1>Video/Audio Resources From Meeting</h1>
+      <hr />
+      <h2>Cat Videos Shown To Destress and Increase Productivity</h2>
+      <video width="720" height="400" controls>
+        <source src="cats.mp4" type="video/mp4" />
+      </video>
+      <hr />
+      <h2>Classical Music To Work To</h2>
+      <audio controls>
+        <source src="music.mp3" type="audio/mp3" />
+      </audio>
+      <hr />
+      <section>
+        Having problems with the video? Want to provide feedback? Submit a form
+        here:
+        <br />
+        <br />
+        <form>
+          <fieldset>
+            <label>Quality:</label> <br /><br />
+            <input type="radio" name="qual" />
+            <label>Good</label>
+            <input type="radio" name="qual" />
+            <label>Ok</label>
+            <input type="radio" name="qual" />
+            <label>Bad</label>
+            <br /><br />
+            <label> Main issue: </label>
+            <select name="issues" id="issues">
+              <option value="vq">Video Quality</option>
+              <option value="sq">Sound Quality</option>
+              <option value="o">Other</option>
+            </select>
+
+            <br /><br />
+            <label>Description:</label> <br />
+            <textarea id="errorReport" name="errorReport" rows="4" cols="50">
+                    Error description
+                </textarea
+            >
+            <br />
+            <br />
+            <label>Date: </label>
+            <input type="date" /> <br /><br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <br />
+        <br />
+
+        Get a copy of the video:
+        <br />
+        <br />
+        <form>
+          <fieldset>
+            <legend>Contact Info</legend>
+            <label>Email:</label>
+            <input type="text" /><br /><br />
+            <label>Github User:</label>
+            <input type="text" /><br /><br />
+            <label>Contact Preference: </label>
+            <input list="prefs" name="pref" id="pref" />
+            <datalist id="prefs">
+              <option value="Prefer email"></option>
+              <option value="Prefer github"></option>
+            </datalist>
+            <br /><br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
