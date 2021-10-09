@@ -8,6 +8,49 @@
   }
 }
 
+.new {
+  position: relative;
+
+  border-color: #001f3f;
+  border-width: 1mm;
+  border-style: solid;
+  border-radius: 2px;
+
+  color: rgb(64, 187, 64); /* Green */
+
+  width: 4in;
+}
+.absents-2 {
+  border-width: 0.6ex;
+  border-color: black;
+  border-style: ridge;
+  margin: 0.5vw;
+  padding: 0.5vh;
+}
+
+.absents-1 {
+  border-width: 0.6ex;
+  border-color: black;
+  border-style: ridge;
+  margin: 0.5vw 0.5vw 0vw 0vw;
+  padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+}
+
+.unfinished {
+  position: relative;
+
+  /*border*/
+  border-color: #001f3f; /* Navy */
+  border-width: 1mm;
+  border-style: solid;
+  border-radius: 2px;
+
+  /*text color*/
+  color: red;
+
+  width: 4in;
+}
+
 button:hover {
   color: blue;
   background-color: rgb(52, 226, 238);
