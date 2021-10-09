@@ -1,0 +1,30 @@
+section,
+div,
+body {
+  background-color: silver;
+}
+
+div.main-content div {
+  background-color: lightgrey;
+}
+
+p > span {
+  font-size: x-large;
+}
+
+video + p {
+  font-style: italic;
+}
+
+h2 ~ p {
+  color: green;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 800px 300px;
+  column-gap: 100px;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
