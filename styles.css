@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.ttf") format("truetype");
+}
+
 * {
   background-color: white; /* Silver-ish */
 }
@@ -6,6 +11,23 @@
   * {
     background-color: hsl(28, 1%, 82%); /* Silver-ish */
   }
+}
+
+h2 {
+  text-decoration: underline;
+  width: 10em;
+  position: static;
+}
+
+#title-content {
+  display: inline;
+  max-width: 60%;
+  min-width: 20%;
+}
+
+.attendance {
+  height: 300px;
+  width: 70%;
 }
 
 .new {
@@ -54,4 +76,9 @@
 button:hover {
   color: blue;
   background-color: rgb(52, 226, 238);
+}
+
+button:active {
+  background-color: blue;
+  color: rgb(52, 226, 238);
 }
