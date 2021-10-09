@@ -7,8 +7,17 @@
       name="description"
       content="My rendition of what meeting minutes should look like"
     />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/favicon.ico" href="favicon.ico" />
   </head>
+
+  <!-- Internal CSS for header -->
+  <style>
+    header {
+      text-align: center;
+    }
+  </style>
+
   <body>
     <header>
       <h1>Team InnoV8 <span>Meeting Minutes</span></h1>
@@ -21,10 +30,10 @@
         <div>
           <h2>Title: Backend Setup</h2>
         </div>
-        <div>
+        <div id="title-content">
           <h3>Date: 10/1/2021</h3>
         </div>
-        <div>
+        <div id="title-content">
           <h3>Topic/Agenda:</h3>
           Address concerns over frontend topics from last meeting, then
           establish a team and a process for setting up the backend for our
@@ -34,53 +43,67 @@
 
       <hr />
 
-      <section>
+      <section class="attendance">
         <h2>Attendance:</h2>
-        <h3>
-          Present: Jordan Snelling, Gabby Hyde, Rosaline Aston, Claire Arter,
-          Clyde Payne, Merle Evanson, Neville Reeves, Traci Romilly, Shel Brett,
-          Tammy Armistead, Juni Baines
-        </h3>
-        <h3>Absent:</h3>
-        (use checkbox to keep track of notifications)
-        <br />
-        <br />
-        <input type="checkbox" />
-        <label> Cher Wilcox </label>
-        <input type="checkbox" />
-        <label> Lindy Gorbold </label>
-        <input type="checkbox" />
-        <label> Carly Benton </label>
-        <input type="checkbox" />
-        <label> Stace Dennis </label>
+        <div>
+          <div>
+            <h3>
+              Present: Jordan Snelling, Gabby Hyde, Rosaline Aston, Claire
+              Arter, Clyde Payne, Merle Evanson, Neville Reeves, Traci Romilly,
+              Shel Brett, Tammy Armistead, Juni Baines
+            </h3>
+          </div>
+          <div>
+            <h3>Absent:</h3>
+            (use checkbox to keep track of notifications)
+            <br />
+            <br />
+            <div class="absent-list">
+              <input type="checkbox" />
+              <label class="absents-1"> Cher Wilcox </label>
+              <input type="checkbox" />
+              <label class="absents-1"> Lindy Gorbold </label>
+              <input type="checkbox" />
+              <label class="absents-2"> Carly Benton </label>
+              <input type="checkbox" />
+              <label class="absents-2"> Stace Dennis </label>
+            </div>
+          </div>
+        </div>
       </section>
 
       <hr />
 
       <section>
         <h2>Topics to Address:</h2>
-        <h3>Unfinished:</h3>
-        <ol>
-          <li>Landing Page: Styling Issues</li>
-        </ol>
-        <h3>New:</h3>
-        <ol>
-          <li>
-            Backend Teams: Find out most experienced developers and assign
-            project manager and team members.
-          </li>
-          <li>
-            Server Hosting: Choose which service we want to store our data.
-          </li>
-        </ol>
+        <section class="topics">
+          <section class="unfinished">
+            <h3 style="text-align: center">Unfinished</h3>
+            <ol>
+              <li>Landing Page: Styling Issues</li>
+            </ol>
+          </section>
+          <section class="new">
+            <h3 style="text-align: center">New</h3>
+            <ol>
+              <li>
+                Backend Teams: Find out most experienced developers and assign
+                project manager and team members.
+              </li>
+              <li>
+                Server Hosting: Choose which service we want to store our data.
+              </li>
+            </ol>
+          </section>
+        </section>
       </section>
 
       <hr />
 
       <section>
         <h2>Comments</h2>
-        <ul>
-          <li>
+        <ul class="comments">
+          <li class="comment">
             <details>
               <summary>Jordan:</summary>
               <p>
@@ -89,7 +112,7 @@
               </p>
             </details>
           </li>
-          <li>
+          <li class="comment">
             <details>
               <summary>Cher:</summary>
               <p>
@@ -98,7 +121,7 @@
               </p>
             </details>
           </li>
-          <li>
+          <li class="comment">
             <details>
               <summary>Gabby:</summary>
               <p>
